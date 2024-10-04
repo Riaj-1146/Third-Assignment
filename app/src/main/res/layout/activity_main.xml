@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:gravity="center"
+    android:background="@drawable/back05">
+
+    <TextView
+        android:id="@+id/txt_greetingTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="We Welcome You Here"
+        android:textColor="#C77210"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"/>
+
+    <EditText
+        android:id="@+id/editTextTouristName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="Tourist Name"
+        android:textColor="@color/black"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/border"
+        android:layout_gravity="center_horizontal"
+        android:padding="12dp"/>
+
+    <EditText
+        android:id="@+id/editTextTouristEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="Tourist Email"
+        android:textColor="@color/black"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/border"
+        android:padding="12dp"/>
+
+    <EditText
+        android:id="@+id/editTextPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="Phone Number"
+        android:textColor="@color/black"
+        android:inputType="phone"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/border"
+        android:padding="12dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:hint="Enter OTP"
+        android:textColor="@color/black"
+        android:textColorHint="#201E1D"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:endIconMode="password_toggle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pinInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:textColor="@color/black"
+            android:background="@drawable/border"
+            android:drawableStart="@drawable/pin"
+            android:drawablePadding="8dp"
+            android:inputType="numberPassword"
+            android:maxLength="3"
+            android:minHeight="40dp"
+            android:paddingTop="5dp"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/spinnerRoomQuality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:backgroundTint="#026B65"
+        android:padding="10dp"/>
+</LinearLayout>
